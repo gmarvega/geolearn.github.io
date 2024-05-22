@@ -1,0 +1,1 @@
+import{q as e}from"./index-yABFnbWc.js";const s=e("mode",{state:()=>({options:{continent:"Asia",mode:"Test",category:"Paises"}}),actions:{setContinent(t){this.options.continent=t},setMode(t){this.options.mode=t},setCategory(t){this.options.category=t}},getters:{}});export{s as u};
