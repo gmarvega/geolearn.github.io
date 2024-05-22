@@ -1,0 +1,426 @@
+/* CSS perfil */
+.title{
+    padding-bottom: 0.625em;
+}
+.title h3{
+    vertical-align: bottom;
+    margin-right: 0.938em;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.space-align{
+    display: block;
+    border-radius: 6px;
+    min-width: 20em;
+    padding-bottom: 2.75em;
+    
+}
+.about-wrapper{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about{
+    background-color: rgb(96, 96, 96);
+    color: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.about-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4em;
+    padding: 0.75em;
+}
+
+.about-me .about-image{
+    display: flex;
+    padding-top: 0.625em;
+}
+
+.about-image img{
+    cursor: pointer;
+    max-height: 3.125em;
+}
+
+.about-me h3{
+    font-size:  1.6rem;
+}
+
+.name-picture{
+    display: flex; 
+    flex-direction: column;
+    padding-top: 0.938em;
+    background-image: linear-gradient(0deg, white 56px, rgb(96, 96, 96) 20px);
+}
+.name-picture h3{
+    font-size: 1.3rem;
+}
+
+.picture-wrapper{
+    width: fit-content;
+    border-radius: 100%;
+    background-color: #56c6e2;
+    background: linear-gradient(90deg, #56c6e2 1.83%, #34c1e4 50.07%, #019fc6 96.34%);
+    margin: 0 auto;
+}
+
+.picture-wrapper img{
+    padding: 0.375em;
+    width: 7em;
+}
+
+.form-wrap{
+    padding: 0.75em;
+    margin-top: 1.25em;
+}
+
+.form-components{
+    display: grid;
+    row-gap: 0.8em;
+    column-gap: 1em;
+    grid-template-areas: "username" "mail" "password" "newpassword";
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-row-start: username;
+    grid-column-start: username;
+    grid-row-end: username;
+    grid-column-end: username;
+}
+
+.user-info label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0.255em;
+    display: block;
+}
+
+.user-info input{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.363);
+    border-top-color: rgba(245, 245, 245, 0.363);
+}
+
+.mail-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-row-start: mail;
+    grid-column-start: mail;
+    grid-row-end: mail;
+    grid-column-end: mail;
+}
+
+.mail-info label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0.255em;
+    display: block;
+}
+
+.mail-info input{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.363);
+    border-top-color: rgba(245, 245, 245, 0.363);
+}
+
+.password-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-row-start: password;
+    grid-column-start: password;
+    grid-row-end: password;
+    grid-column-end: password;
+}
+
+.password-info label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0.255em;
+    display: block;
+}
+
+.password-info input{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.363);
+    border-top-color: rgba(245, 245, 245, 0.363);
+}
+
+
+.newpassword-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-row-start: newpassword;
+    grid-column-start: newpassword;
+    grid-row-end: newpassword;
+    grid-column-end: newpassword;
+}
+
+.newpassword-info label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    margin-bottom: 0.255em;
+    display: block;
+}
+
+.newpassword-info input{
+    display: flex;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.363);
+    border-top-color: rgba(245, 245, 245, 0.363);
+}
+
+.greyText{
+    color: rgb(139, 139, 139);
+}
+
+.btn-save {
+    background: linear-gradient(90deg, #56c6e2 1.83%, #34c1e4 50.07%, #019fc6 96.34%);
+    border-color: #56c6e2;
+    width: 100%;
+}
+
+.filter-option{
+    display: flex;
+    background-color: #56c6e2;
+    color: black; 
+    padding: 0.375em;
+    height: 2.5em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 17em;
+}
+
+.only-estudi{
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    width: 50%;
+    min-width: 4.063em;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 0em;
+    padding-right: 0.5em;
+    color: rgb(139, 139, 139);
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0.188em;
+}
+
+.activateEstudi{
+    border-radius: 20px;
+    width: 50%;
+    min-width: 4.063em;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 0em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    color: rgb(51, 51, 51);
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #56c6e2;
+    padding-top: 0.188em;
+}
+
+.only-test{
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    min-width: 4.063em;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 0em;
+    padding-right: 0.5em;
+    color: rgb(139, 139, 139);
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0.188em;
+}
+
+.activateTest{
+    border-radius: 20px;
+    width: 50%;
+    min-width: 4.063em;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 0em;
+    padding-right: 0.5em;
+    padding-left: 0.375em;
+    color: rgb(51, 51, 51);
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #56c6e2;
+    padding-top: 0.188em;
+}
+
+.card-content{
+    display: flex;
+    padding-bottom: 1.25em;
+}
+
+.card-content a{
+    text-decoration: none;
+}
+
+.card-content-resume{
+    background-color:  rgba(233, 223, 223, 0.191);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.625em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 20em;
+}
+
+.color-card-content{
+    display: flex; 
+    background-color: #56c6e2;
+    height: 0.563em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0.3px solid rgb(139, 139, 139);
+
+}
+
+.row-content{
+    display: flex; 
+    background-color:  rgba(233, 223, 223, 0.191);
+}
+
+.info-card{
+    display:flex;
+    flex-direction: column; 
+    padding-left: 0.75em;
+}
+
+.info-card-name{
+    font-weight: 600;
+    font-size: 1.125em;
+    padding-top: 0.875em;
+    padding-right: 0.75em;
+    padding-bottom: 0em;
+    color:black; 
+    
+    
+}
+
+.info-card-description{
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 0.188em;
+    padding-right: 0.75em;
+    padding-bottom: 0em;
+    color:black; 
+}
+
+.info-card-time{
+    display: flex;
+}
+
+.info-card-time-inici{
+    display: flex; 
+    flex-direction: column;
+    width: 50%;
+}
+
+.info-card-time-title{
+    padding-top: 0.625em;
+    font-size: 0.75em;
+    color: rgb(102, 102, 102);
+}
+
+.info-card-time-description{
+    font-size: 0.938em;
+    color: rgb(51, 51, 51);
+}
+
+.info-card-time-spent{
+    display: flex; 
+    flex-direction: column;
+    width: 50%;
+}
+
+.score-card{
+    display:flex;
+    flex-direction: column;
+    padding-left: 0.75em;
+}
+
+.average-score, .progress-score{
+    display: flex; 
+    flex-direction: column;
+}
+
+.percentatge{
+    padding-left: 0.625em;
+}
+
+.percentage-number{
+    display: inline-flex;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.125em;
+    font-size: 0.938em;
+    min-width: 2.375em;
+    justify-content: center;
+    background-color: rgb(73, 128, 8);
+}
+
+.green {
+    display: inline-flex;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.125em;
+    font-size: 0.938em;
+    min-width: 2.375em;
+    justify-content: center;
+    background-color: #498008;
+}
+.yellow {
+    display: inline-flex;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.125em;
+    font-size: 0.938rem;
+    min-width: 2.375em;
+    justify-content: center;
+    background-color: #A39B22;
+}
+.red {
+    display: inline-flex;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.125em;
+    font-size: 0.938em;
+    min-width: 2.375em;
+    justify-content: center;
+    background-color: #9A2644;
+}

@@ -1,0 +1,104 @@
+
+/* CSS contact.html */
+.navbar-floating {
+    width: calc(100% - 20px); /* Ancho total menos 20px (10px de cada lado) */
+    margin: 5px;
+    border-radius: 10px; 
+}
+
+.navbar .nav-link[href="#scrollspyHeading2"] {
+    color: #0d6efd;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+main {
+    padding: 35px;
+}
+
+footer{
+    padding: 20px;
+}
+
+h1{
+    font-size: 1.6em;
+}
+h2{
+    font-size: 1.3em;
+}
+ul{
+    line-height: 2em;
+}
+
+/* Contact Page Styles */
+main.contacto{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.contact-page-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+.form-wrapper{
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    height: fit-content;
+}
+.contacto-column{
+    width: 40%;
+}
+label.input{
+    font-weight: bold;
+}
+input, textarea{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}button{
+     background-color: black;
+     color: white;
+     padding: 5px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.rating {
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse; /*selects the stars from left to right*/
+    align-items: center;
+    justify-content: center;
+}
+
+.rating input[type="radio"] {
+    display: none; /*Hides the ratio buttons*/
+}
+
+.rating label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2605"; /*star*/
+    font-size: 30px;
+}
+
+.rating input[type="radio"]:checked ~ label::before {
+    color: darkorange;
+}

@@ -1,0 +1,10 @@
+/* header style */
+.navbar-floating {
+    width: calc(100% - 20px); /* Ancho total menos 20px (10px de cada lado) */
+    margin: 5px;
+    border-radius: 10px; 
+}
+
+header nav a{
+    text-decoration: none; 
+}

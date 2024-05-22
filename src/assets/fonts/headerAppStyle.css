@@ -1,0 +1,108 @@
+/* CSS header app */
+.navbar-floating {
+    width: calc(100% - 1.25em); /* Ancho total menos 20px (10px de cada lado) */
+    margin: 0.313em;
+    border-radius: 10px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #0454ff;
+    text-decoration: none;
+    margin: 0 0.625em;
+    font-size: 1.6em;
+}
+
+.without-decoration {
+    text-decoration: none;
+}
+
+.question-mark-icon {
+    max-height: 1.438em;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0.25em;
+    background-color: rgba(233, 223, 223, 0.191);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-right: 0.9em;
+}
+
+.circular-progress {
+    position: relative;
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.circular-progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circular-progress .bg {
+    stroke: #ddd;
+    stroke-width: 3;
+    fill: none;
+}
+
+.circular-progress .fg {
+    stroke: #56c6e2;
+    stroke-width: 3;
+    fill: none;
+    /*transform: rotate(-90deg);*/
+    transform-origin: center;
+    transition: stroke-dasharray 0.3s linear;
+    animation: progress-anim 1s ease-in-out forwards;
+}
+
+@keyframes progress-anim {
+    from {
+        stroke-dashoffset: 100%; /* Start the animation with the circle empty */
+    }
+    to {
+        stroke-dashoffset: 0%; /* End the animation with the circle full */
+    }
+}
+
+.circular-progress .profile-icon {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    width: 2.125em;
+    height: 2.125em;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.625em;
+    padding-top: 0.625em;
+    font-size: 0.75em;
+    color: rgb(102, 102, 102);
+}
+
+.profile-info .user-name {
+    padding-top: 0.5em;
+    line-height: 0;
+}
+
+.profile-info .user-mail {
+    font-size: 0.73em;
+    padding-left: 0.2em;
+    color: rgba(102, 102, 102, 0.8);
+}
